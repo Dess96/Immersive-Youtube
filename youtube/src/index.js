@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
+import Main from './Components/main/main';
 
 import {
   BrowserRouter as Router,
@@ -14,7 +15,7 @@ ReactDOM.render(
     <React.StrictMode>
       <Switch>
         <Route exact path="/">
-          <Counter loading={true} data={{ id: 1, name: 'Puerco' }} />
+          <Main />
         </Route>
       </Switch>
     </React.StrictMode>
