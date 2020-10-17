@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import Image from '../Components/image/image';
 
 const GetVideos = () => {
     const [video, setVideos] = useState([]);
@@ -14,9 +13,7 @@ const GetVideos = () => {
         })
     }, []);
 
-    return video.map((item) => <li key={item.id}>{item.title}
-        <br></br>{item.description}
-        <br></br><Image source={item.poster}/></li> );
+    return video;
 }
 
 export default GetVideos;
