@@ -1,17 +1,20 @@
 import React, {useState, useEffect} from 'react';
 import GetVideos from '../../Hooks/getVideos';
+import List from '../list/list';
 import Input from '../input/input';
-import Button from '../button/button';
-import Image from '../image/image';
 
 const Main = () => {
     const videos = GetVideos();
-    return videos.map((item) => 
+    
+    return (
         <div>
-            <li key={item.id}>{item.title}
-            <br></br>{item.description}
-            <br></br><Image source={item.poster}/></li> 
-        </div>);
+        <Input type={'text'} placeholder={'search videos'}/>
+        {
+            videos.map((item) => 
+            <List id={item.id} title={item.title} description={item.description} poster={item.poster}/>)
+        }
+        </div>
+    );
 }
 
 export default Main;
