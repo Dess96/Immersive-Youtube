@@ -1,10 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import List from '../list/list'
 import GetVideoId from '../../Hooks/getVideoId';
-import Button from '../button/button';
 
 import {
-    BrowserRouter as Router,
     useParams
 } from "react-router-dom";
 
@@ -16,7 +14,7 @@ const IdVideo = () => {
         videos ? 
         <div>
             {
-                <List id={videos.id} title={videos.title} description={videos.description} poster={videos.poster}/>
+                //<List id={videos.id} title={videos.title} description={videos.description} poster={videos.poster}/>
             }
         </div>
         : <div></div>

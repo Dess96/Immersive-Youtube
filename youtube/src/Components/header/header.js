@@ -19,7 +19,7 @@ const Header = () => {
     return (<div>
         <h1>YouTube</h1>
          <input type='text' placeholder='Search videos' onKeyDown={updateData}/>
-        <button onClick={() => changeURL(inp)}>search</button>
+         <button onClick={() => changeURL(inp)}>search</button>
     </div>);
 }
 

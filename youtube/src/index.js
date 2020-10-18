@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import Search from './Components/search/search';
-import Header from './Components/header/header';
 import Filter from './Components/filter/filter';
+import Header from './Components/header/header';
+import VideoList from './Components/videoList/videoList';
 import IdVideo from './Components/idVideo/idVideo';
 
 import {
@@ -19,10 +19,10 @@ ReactDOM.render(
     <Header />
       <Switch>
         <Route exact path="/">
-          <Filter />
+          <VideoList />
         </Route>
         <Route path='/search/:search'>
-          <Search />
+          <Filter />
         </Route>
         <Route path='/id/:id'>
           <IdVideo />

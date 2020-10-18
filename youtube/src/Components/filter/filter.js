@@ -1,17 +1,26 @@
 import React, {useState} from 'react';
 import List from '../list/list'
-import GetVideos from '../../Hooks/getVideos';
+import GetVideoSearch from '../../Hooks/getVideoSearch';
 
-const Filter = () => {
-    const videos = GetVideos();
+import {
+    BrowserRouter as Router,
+    useParams
+} from "react-router-dom";
+
+const Search = () => {
+    let {search} = useParams();
+    const videos = GetVideoSearch(search);
+
     return (
+        videos ? 
         <div>
             {
                 videos.map((item) => 
                 <List id={item.id} title={item.title} description={item.description} poster={item.poster}/>)
             }
         </div>
+        : <div></div>
     );
 }
 
-export default Filter;
+export default Search;

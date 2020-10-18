@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from 'react';
-import Image from '../Components/image/image';
+import {useState, useEffect} from 'react';
 
 const GetVideos = () => {
     const [video, setVideos] = useState([]);
