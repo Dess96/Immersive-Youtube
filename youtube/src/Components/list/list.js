@@ -6,7 +6,7 @@ const List = ({id, title, description, poster}) => {
     return (
         <div>
             <li key={id}>{title}
-            <br></br>
+            <br></br><div className="desc">{description}</div>
             <Image source={poster}/></li> 
         </div>
     )

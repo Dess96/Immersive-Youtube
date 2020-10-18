@@ -11,7 +11,7 @@ const videoList = () => {
             <ul>
             {
                 videos.map((item) => 
-                <List id={item.id} title={item.title} description={item.description} poster={item.poster}/>)
+                <List id={item.id} title={item.title} description={''} poster={item.poster}/>)
             }
             </ul>
         </div>

@@ -51,4 +51,5 @@ button:hover {
 
 h1:hover {
     color: #2ecc71;
+    cursor: default;
 }
