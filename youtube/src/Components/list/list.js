@@ -7,7 +7,7 @@ const List = ({id, title, description, poster}) => {
         <div>
             <li key={id}>{title}
             <br></br><div className="desc">{description}</div>
-            <Image source={poster}/></li> 
+            <Image source={poster} id={id}/></li> 
         </div>
     )
 }

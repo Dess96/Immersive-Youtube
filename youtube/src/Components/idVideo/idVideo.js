@@ -1,7 +1,7 @@
 import React from 'react';
 import List from '../list/list'
 import GetVideoId from '../../Hooks/getVideoId';
-
+import './idVideo.css';
 import {
     useParams
 } from "react-router-dom";
@@ -12,10 +12,12 @@ const IdVideo = () => {
 
     return (
         videos ? 
-        <div>
+        <div className="videos">
+            <ul>
             {
                 <List id={videos.id} title={videos.title} description={videos.description} poster={videos.poster}/>
             }
+            </ul>
         </div>
         : <div></div>
     );
