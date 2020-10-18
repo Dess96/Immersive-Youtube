@@ -1,0 +1,75 @@
+img {
+  width: 18rem;
+  height: 10rem;
+  padding: 1rem 2rem 2rem;
+}
+
+.imgDiv {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+  height: 12rem;
+}
+
+.imgDiv .contentOverlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.imgDiv:hover .contentOverlay {
+  opacity: 1;
+}
+
+.contentImage {
+  width: 100%;
+}
+
+.contentDetails {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.imgDiv:hover .contentDetails {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  cursor: pointer;
+}
+
+span {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.fadeIn-left{
+    left: 20%;
+}

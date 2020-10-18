@@ -14,7 +14,7 @@ const IdVideo = () => {
         videos ? 
         <div>
             {
-                //<List id={videos.id} title={videos.title} description={videos.description} poster={videos.poster}/>
+                <List id={videos.id} title={videos.title} description={videos.description} poster={videos.poster}/>
             }
         </div>
         : <div></div>

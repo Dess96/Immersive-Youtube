@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import './header.css';
 
 import {
     useHistory
@@ -16,11 +17,15 @@ const Header = () => {
         history.push(`/search/${inp}`);
     }
 
-    return (<div>
-        <h1>YouTube</h1>
-         <input type='text' placeholder='Search videos' onKeyDown={updateData}/>
-         <button onClick={() => changeURL(inp)}>search</button>
-    </div>);
+    return (
+        <header>
+            <h1>YouTube</h1>
+            <div className="inputDiv">
+                <input type='text' placeholder='Search videos' onKeyDown={updateData}/>
+                <button onClick={() => changeURL(inp)}>search</button>
+            </div>
+        </header>
+    );
 }
 
 export default Header;

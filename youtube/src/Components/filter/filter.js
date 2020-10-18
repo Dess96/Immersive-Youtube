@@ -1,9 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import List from '../list/list'
 import GetVideoSearch from '../../Hooks/getVideoSearch';
 
 import {
-    BrowserRouter as Router,
     useParams
 } from "react-router-dom";
 

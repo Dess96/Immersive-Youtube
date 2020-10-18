@@ -1,12 +1,13 @@
 import React from 'react';
 import Image from '../image/image';
+import './list.css';
 
 const List = ({id, title, description, poster}) => {
     return (
         <div>
             <li key={id}>{title}
-            <br></br>{description}
-            <br></br><Image source={poster}/></li> 
+            <br></br>
+            <Image source={poster}/></li> 
         </div>
     )
 }

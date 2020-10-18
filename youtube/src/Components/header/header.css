@@ -1,0 +1,54 @@
+header {
+    display: flex;
+    background-color: #000000;
+}
+
+h1 {
+    margin: 1rem;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.inputDiv {
+    align-self: center;
+    margin-left: 5rem;
+}
+
+input {
+    width: 8rem;
+    border: 0;
+    background: none;
+    border: 0.05rem solid #3498db;
+    padding: 0.5rem 0.5rem;
+    outline: none;
+    color: #ffffff;
+    border-radius: 5rem;
+    transition: 0.25s;
+}
+
+input:focus {
+    width: 20rem;
+    border-color: #2ecc71;
+}
+
+button {
+    width: 8rem;
+    border: 0;
+    background: none;
+    border: 0.05rem solid #2ecc71;
+    padding: 0.5rem 2rem;
+    outline: none;
+    color: #ffffff;
+    border-radius: 5rem;
+    transition: 0.25s;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2ecc71;
+}
+
+h1:hover {
+    color: #2ecc71;
+}
