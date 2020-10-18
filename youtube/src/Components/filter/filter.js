@@ -3,18 +3,13 @@ import List from '../list/list'
 import GetVideos from '../../Hooks/getVideos';
 
 const Filter = () => {
-    var videos = GetVideos();
-    //console.log(videos)
-
-    const filter = () => {
-        videos = videos.filter(item => item.title.toLowerCase().includes('vance'));
-        console.log(videos);
-    }
-
+    const videos = GetVideos();
     return (
         <div>
-            <button onClick={filter}>search</button>
-            {console.log(videos)}
+            {
+                videos.map((item) => 
+                <List id={item.id} title={item.title} description={item.description} poster={item.poster}/>)
+            }
         </div>
     );
 }

@@ -2,7 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import Main from './Components/main/main';
+import Search from './Components/search/search';
+import Header from './Components/header/header';
+import Filter from './Components/filter/filter';
+import IdVideo from './Components/idVideo/idVideo';
 
 import {
   BrowserRouter as Router,
@@ -13,9 +16,16 @@ import {
 ReactDOM.render(
   <Router>
     <React.StrictMode>
+    <Header />
       <Switch>
         <Route exact path="/">
-          <Main />
+          <Filter />
+        </Route>
+        <Route path='/search/:search'>
+          <Search />
+        </Route>
+        <Route path='/id/:id'>
+          <IdVideo />
         </Route>
       </Switch>
     </React.StrictMode>
