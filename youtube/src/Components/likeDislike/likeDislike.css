@@ -1,0 +1,17 @@
+.buttonContainer {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.dislike {
+    border-color: red;
+}
+
+.dislike:hover {
+    background-color: rgb(211, 40, 40);
+}
+
+.textDiv {
+    align-self: center;
+}
