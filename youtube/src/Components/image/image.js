@@ -5,7 +5,7 @@ import {
   useHistory
 } from "react-router-dom";
 
-const Image = ({source, id, width, height}) => {
+const Image = ({source, id}) => {
   const history = useHistory();
   const [data] = useState(source);
 

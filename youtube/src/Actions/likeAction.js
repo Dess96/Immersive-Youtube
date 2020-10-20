@@ -1,12 +1,14 @@
-const like = () => {
+const like = (videoObj) => {
     return {
-        type: "INCREMENT"
+        type: "INCREMENT",
+        payload: videoObj
     }
 }
 
-const dislike = () => {
+const dislike = (videoObj) => {
     return {
-        type: "DECREMENT"
+        type: "DECREMENT",
+        payload: videoObj
     }
 }
 
